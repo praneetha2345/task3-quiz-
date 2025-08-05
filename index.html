@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task 3 - Quiz & API</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Responsive Quiz App</h1>
+
+    <div id="quiz-section">
+      <div id="question">Loading question...</div>
+      <ul id="answers">
+        <li><button class="answer-btn" onclick="checkAnswer(this)"></button></li>
+        <li><button class="answer-btn" onclick="checkAnswer(this)"></button></li>
+        <li><button class="answer-btn" onclick="checkAnswer(this)"></button></li>
+        <li><button class="answer-btn" onclick="checkAnswer(this)"></button></li>
+      </ul>
+      <button id="next-btn" onclick="nextQuestion()">Next</button>
+      <div id="result"></div>
+    </div>
+
+    <hr />
+
+    <div id="joke-section">
+      <h2>Want a Joke?</h2>
+      <button onclick="getJoke()">Get a Joke</button>
+      <p id="joke"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
